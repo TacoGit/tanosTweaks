@@ -1,0 +1,11 @@
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\bin\Debug\tanosTweaks.exe.config
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\bin\Debug\tanosTweaks.exe
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\bin\Debug\tanosTweaks.pdb
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\obj\Debug\tanosTweaks.csproj.AssemblyReference.cache
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\obj\Debug\tanosTweaks.Form1.resources
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\obj\Debug\tanosTweaks.Properties.Resources.resources
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\obj\Debug\tanosTweaks.csproj.GenerateResource.cache
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\obj\Debug\tanosTweaks.csproj.CoreCompileInputs.cache
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\obj\Debug\tanosTweaks.exe
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\obj\Debug\tanosTweaks.pdb
+C:\Users\tanos\source\repos\tanosTweaks\tanosTweaks\obj\Debug\tanosTweaks.Form2.resources
