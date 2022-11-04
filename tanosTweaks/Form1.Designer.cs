@@ -42,12 +42,16 @@ namespace tanosTweaks
             this.label1 = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Button();
             this.gamingtweaks = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.errorlog = new System.Windows.Forms.Label();
+            this.hostsfile = new System.Windows.Forms.Button();
             this.disableindexing = new System.Windows.Forms.Button();
             this.disablegamemode = new System.Windows.Forms.Button();
             this.fixlag = new System.Windows.Forms.Button();
             this.lessinputdelay = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.desktoptweaks = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.cleanup = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.additional = new System.Windows.Forms.Panel();
@@ -56,14 +60,31 @@ namespace tanosTweaks
             this.unindrive = new System.Windows.Forms.Button();
             this.unindefender = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.hostsfile = new System.Windows.Forms.Button();
-            this.errorlog = new System.Windows.Forms.Label();
+            this.gconfig = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.loggameconfig = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.caution = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.wh = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.b = new System.Windows.Forms.CheckBox();
+            this.ip = new System.Windows.Forms.CheckBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.home.SuspendLayout();
             this.gamingtweaks.SuspendLayout();
             this.desktoptweaks.SuspendLayout();
             this.additional.SuspendLayout();
+            this.gconfig.SuspendLayout();
+            this.caution.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -196,7 +217,7 @@ namespace tanosTweaks
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(19, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 27);
+            this.label1.Size = new System.Drawing.Size(147, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hello user 👋,";
             // 
@@ -217,6 +238,7 @@ namespace tanosTweaks
             // 
             // gamingtweaks
             // 
+            this.gamingtweaks.Controls.Add(this.button1);
             this.gamingtweaks.Controls.Add(this.errorlog);
             this.gamingtweaks.Controls.Add(this.hostsfile);
             this.gamingtweaks.Controls.Add(this.disableindexing);
@@ -231,13 +253,53 @@ namespace tanosTweaks
             this.gamingtweaks.TabIndex = 8;
             this.gamingtweaks.Visible = false;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(24, 262);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(353, 44);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Change game configs";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // errorlog
+            // 
+            this.errorlog.AutoSize = true;
+            this.errorlog.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorlog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.errorlog.Location = new System.Drawing.Point(25, 319);
+            this.errorlog.Name = "errorlog";
+            this.errorlog.Size = new System.Drawing.Size(0, 17);
+            this.errorlog.TabIndex = 12;
+            // 
+            // hostsfile
+            // 
+            this.hostsfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.hostsfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hostsfile.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.hostsfile.ForeColor = System.Drawing.Color.White;
+            this.hostsfile.Location = new System.Drawing.Point(24, 214);
+            this.hostsfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.hostsfile.Name = "hostsfile";
+            this.hostsfile.Size = new System.Drawing.Size(353, 44);
+            this.hostsfile.TabIndex = 11;
+            this.hostsfile.Text = "Fix Hosts File";
+            this.hostsfile.UseVisualStyleBackColor = true;
+            this.hostsfile.Click += new System.EventHandler(this.hostsfile_Click);
+            // 
             // disableindexing
             // 
             this.disableindexing.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.disableindexing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.disableindexing.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.disableindexing.ForeColor = System.Drawing.Color.White;
-            this.disableindexing.Location = new System.Drawing.Point(28, 178);
+            this.disableindexing.Location = new System.Drawing.Point(24, 166);
             this.disableindexing.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.disableindexing.Name = "disableindexing";
             this.disableindexing.Size = new System.Drawing.Size(353, 44);
@@ -252,7 +314,7 @@ namespace tanosTweaks
             this.disablegamemode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.disablegamemode.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.disablegamemode.ForeColor = System.Drawing.Color.White;
-            this.disablegamemode.Location = new System.Drawing.Point(28, 128);
+            this.disablegamemode.Location = new System.Drawing.Point(24, 116);
             this.disablegamemode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.disablegamemode.Name = "disablegamemode";
             this.disablegamemode.Size = new System.Drawing.Size(353, 44);
@@ -267,7 +329,7 @@ namespace tanosTweaks
             this.fixlag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixlag.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.fixlag.ForeColor = System.Drawing.Color.White;
-            this.fixlag.Location = new System.Drawing.Point(211, 78);
+            this.fixlag.Location = new System.Drawing.Point(207, 66);
             this.fixlag.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fixlag.Name = "fixlag";
             this.fixlag.Size = new System.Drawing.Size(171, 44);
@@ -282,7 +344,7 @@ namespace tanosTweaks
             this.lessinputdelay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lessinputdelay.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.lessinputdelay.ForeColor = System.Drawing.Color.White;
-            this.lessinputdelay.Location = new System.Drawing.Point(28, 78);
+            this.lessinputdelay.Location = new System.Drawing.Point(24, 66);
             this.lessinputdelay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lessinputdelay.Name = "lessinputdelay";
             this.lessinputdelay.Size = new System.Drawing.Size(171, 44);
@@ -298,7 +360,7 @@ namespace tanosTweaks
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(24, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 27);
+            this.label4.Size = new System.Drawing.Size(173, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Gaming Tweaks";
             // 
@@ -313,6 +375,18 @@ namespace tanosTweaks
             this.desktoptweaks.Size = new System.Drawing.Size(399, 348);
             this.desktoptweaks.TabIndex = 11;
             this.desktoptweaks.Visible = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.White;
+            this.richTextBox1.Location = new System.Drawing.Point(30, 118);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(339, 205);
+            this.richTextBox1.TabIndex = 8;
+            this.richTextBox1.Text = "[INFO BOX, DO NOT EDIT]";
             // 
             // cleanup
             // 
@@ -336,7 +410,7 @@ namespace tanosTweaks
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(24, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 27);
+            this.label5.Size = new System.Drawing.Size(178, 25);
             this.label5.TabIndex = 0;
             this.label5.Text = "Desktop Tweaks";
             // 
@@ -421,46 +495,249 @@ namespace tanosTweaks
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(24, 25);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 27);
+            this.label7.Size = new System.Drawing.Size(117, 25);
             this.label7.TabIndex = 0;
             this.label7.Text = "Additional";
             // 
-            // richTextBox1
+            // gconfig
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.White;
-            this.richTextBox1.Location = new System.Drawing.Point(30, 118);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(339, 205);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "[INFO BOX, DO NOT EDIT]";
+            this.gconfig.Controls.Add(this.button7);
+            this.gconfig.Controls.Add(this.button5);
+            this.gconfig.Controls.Add(this.button6);
+            this.gconfig.Controls.Add(this.comboBox2);
+            this.gconfig.Controls.Add(this.comboBox1);
+            this.gconfig.Controls.Add(this.loggameconfig);
+            this.gconfig.Controls.Add(this.label10);
+            this.gconfig.Location = new System.Drawing.Point(173, 35);
+            this.gconfig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gconfig.Name = "gconfig";
+            this.gconfig.Size = new System.Drawing.Size(399, 348);
+            this.gconfig.TabIndex = 13;
+            this.gconfig.Visible = false;
             // 
-            // hostsfile
+            // button7
             // 
-            this.hostsfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.hostsfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hostsfile.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.hostsfile.ForeColor = System.Drawing.Color.White;
-            this.hostsfile.Location = new System.Drawing.Point(28, 226);
-            this.hostsfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.hostsfile.Name = "hostsfile";
-            this.hostsfile.Size = new System.Drawing.Size(353, 44);
-            this.hostsfile.TabIndex = 11;
-            this.hostsfile.Text = "Fix Hosts File";
-            this.hostsfile.UseVisualStyleBackColor = true;
-            this.hostsfile.Click += new System.EventHandler(this.hostsfile_Click);
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(45, 232);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(322, 34);
+            this.button7.TabIndex = 18;
+            this.button7.Text = "Go Back";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // errorlog
+            // button5
             // 
-            this.errorlog.AutoSize = true;
-            this.errorlog.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorlog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.errorlog.Location = new System.Drawing.Point(25, 319);
-            this.errorlog.Name = "errorlog";
-            this.errorlog.Size = new System.Drawing.Size(0, 17);
-            this.errorlog.TabIndex = 12;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(212, 189);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(155, 34);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "Recover";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(45, 189);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(151, 34);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "Start";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox2.ForeColor = System.Drawing.Color.White;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Performance",
+            "Graphics"});
+            this.comboBox2.Location = new System.Drawing.Point(35, 136);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(332, 24);
+            this.comboBox2.TabIndex = 15;
+            this.comboBox2.Text = "Boost for";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Valorant",
+            "Counter-Strike: Global Offensive",
+            "Overwatch 2"});
+            this.comboBox1.Location = new System.Drawing.Point(35, 99);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(332, 24);
+            this.comboBox1.TabIndex = 14;
+            this.comboBox1.Text = "Choose Game";
+            // 
+            // loggameconfig
+            // 
+            this.loggameconfig.AutoSize = true;
+            this.loggameconfig.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loggameconfig.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.loggameconfig.Location = new System.Drawing.Point(24, 314);
+            this.loggameconfig.Name = "loggameconfig";
+            this.loggameconfig.Size = new System.Drawing.Size(197, 17);
+            this.loggameconfig.TabIndex = 12;
+            this.loggameconfig.Text = "Logs will happen here";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(24, 25);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(216, 25);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Game Configuration";
+            // 
+            // caution
+            // 
+            this.caution.Controls.Add(this.button8);
+            this.caution.Controls.Add(this.ip);
+            this.caution.Controls.Add(this.label13);
+            this.caution.Controls.Add(this.wh);
+            this.caution.Controls.Add(this.label12);
+            this.caution.Controls.Add(this.label6);
+            this.caution.Controls.Add(this.button13);
+            this.caution.Controls.Add(this.label11);
+            this.caution.Controls.Add(this.b);
+            this.caution.Location = new System.Drawing.Point(171, 34);
+            this.caution.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.caution.Name = "caution";
+            this.caution.Size = new System.Drawing.Size(399, 348);
+            this.caution.TabIndex = 14;
+            this.caution.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label12.Location = new System.Drawing.Point(32, 49);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(313, 48);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "A lot of scripts will be ran, and\r\nyour wifi may get disconnected";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label6.Location = new System.Drawing.Point(25, 319);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 17);
+            this.label6.TabIndex = 12;
+            // 
+            // button13
+            // 
+            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.Location = new System.Drawing.Point(40, 259);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(155, 44);
+            this.button13.TabIndex = 8;
+            this.button13.Text = "Start";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(32, 16);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(90, 25);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Caution";
+            // 
+            // wh
+            // 
+            this.wh.AutoSize = true;
+            this.wh.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wh.ForeColor = System.Drawing.Color.White;
+            this.wh.Location = new System.Drawing.Point(99, 161);
+            this.wh.Name = "wh";
+            this.wh.Size = new System.Drawing.Size(186, 24);
+            this.wh.TabIndex = 14;
+            this.wh.Text = "Wireless headphones";
+            this.wh.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label13.Location = new System.Drawing.Point(119, 116);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(140, 25);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "tick if you use";
+            // 
+            // b
+            // 
+            this.b.AutoSize = true;
+            this.b.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b.ForeColor = System.Drawing.Color.White;
+            this.b.Location = new System.Drawing.Point(99, 186);
+            this.b.Name = "b";
+            this.b.Size = new System.Drawing.Size(103, 24);
+            this.b.TabIndex = 17;
+            this.b.Text = "Bluetooth";
+            this.b.UseVisualStyleBackColor = true;
+            // 
+            // ip
+            // 
+            this.ip.AutoSize = true;
+            this.ip.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ip.ForeColor = System.Drawing.Color.White;
+            this.ip.Location = new System.Drawing.Point(99, 212);
+            this.ip.Name = "ip";
+            this.ip.Size = new System.Drawing.Size(61, 24);
+            this.ip.TabIndex = 18;
+            this.ip.Text = "IPv6";
+            this.ip.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(207, 260);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(164, 44);
+            this.button8.TabIndex = 19;
+            this.button8.Text = "View Code";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form1
             // 
@@ -471,10 +748,12 @@ namespace tanosTweaks
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.caution);
+            this.Controls.Add(this.gamingtweaks);
             this.Controls.Add(this.home);
             this.Controls.Add(this.additional);
             this.Controls.Add(this.desktoptweaks);
-            this.Controls.Add(this.gamingtweaks);
+            this.Controls.Add(this.gconfig);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
@@ -489,6 +768,10 @@ namespace tanosTweaks
             this.desktoptweaks.PerformLayout();
             this.additional.ResumeLayout(false);
             this.additional.PerformLayout();
+            this.gconfig.ResumeLayout(false);
+            this.gconfig.PerformLayout();
+            this.caution.ResumeLayout(false);
+            this.caution.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -525,6 +808,25 @@ namespace tanosTweaks
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button hostsfile;
         private System.Windows.Forms.Label errorlog;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel gconfig;
+        private System.Windows.Forms.Label loggameconfig;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Panel caution;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.CheckBox ip;
+        private System.Windows.Forms.CheckBox b;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.CheckBox wh;
+        private System.Windows.Forms.Button button8;
     }
 }
 
